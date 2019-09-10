@@ -6,7 +6,7 @@ const NavPage = () => {
   return (
     <header className={styles.header}>
       <ul className={styles.nav}>
-        <li>
+        <li className={styles.item}>
           <NavLink
             exact
             to="/"
@@ -16,7 +16,7 @@ const NavPage = () => {
             Home
           </NavLink>
         </li>
-        <li>
+        <li className={styles.item}>
           <NavLink
             exact
             to="/pets"
@@ -26,7 +26,7 @@ const NavPage = () => {
             Pets
           </NavLink>
         </li>
-        <li>
+        <li className={styles.item}>
           <NavLink
             exact
             to="/about"

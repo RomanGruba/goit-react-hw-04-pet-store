@@ -1,6 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import styles from './GalleryPage.module.css';
-import PetPage from '../PetPage/PetPage';
 
 const GalleryPage = ({ items }) => {
   return (
@@ -9,8 +9,10 @@ const GalleryPage = ({ items }) => {
       <ul className={styles.gallery}>
         {items.map(item => (
           <li key={item.id} className={styles.item}>
-            <img src={item.image} alt="" />
-            <p className={styles.name}>{item.name}</p>
+            <Link to={`/pets/${item.id}`}>
+              <img src={item.image} alt="" />
+              <p className={styles.name}>{item.name}</p>
+            </Link>
           </li>
         ))}
       </ul>
@@ -19,3 +21,19 @@ const GalleryPage = ({ items }) => {
 };
 
 export default GalleryPage;
+
+// const GalleryPage = ({ items }) => {
+//   return (
+//     <>
+//       <h2>Available pets</h2>
+//       <ul className={styles.gallery}>
+//         {items.map(item => (
+//           <li key={item.id} className={styles.item}>
+//             <img src={item.image} alt="" />
+//             <p className={styles.name}>{item.name}</p>
+//           </li>
+//         ))}
+//       </ul>
+//     </>
+//   );
+// };
