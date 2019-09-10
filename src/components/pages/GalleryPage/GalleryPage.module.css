@@ -1,0 +1,16 @@
+.gallery {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+
+.item {
+  max-width: 300px;
+  margin-bottom: 40px;
+}
+
+.item img {
+  max-width: 300px;
+}
