@@ -9,7 +9,7 @@ const GalleryPage = ({ items }) => {
       <ul className={styles.gallery}>
         {items.map(item => (
           <li key={item.id} className={styles.item}>
-            <Link to={`/pets/${item.id}`}>
+            <Link to={`/pets/${item.id}`} style={{ textDecoration: 'none' }}>
               <img src={item.image} alt="" />
               <p className={styles.name}>{item.name}</p>
             </Link>
