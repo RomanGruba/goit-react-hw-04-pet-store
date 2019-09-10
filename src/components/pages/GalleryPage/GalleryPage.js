@@ -9,7 +9,8 @@ const GalleryPage = ({ items }) => {
       <ul className={styles.gallery}>
         {items.map(item => (
           <li key={item.id} className={styles.item}>
-            <PetPage item={item} />
+            <img src={item.image} alt="" />
+            <p className={styles.name}>{item.name}</p>
           </li>
         ))}
       </ul>

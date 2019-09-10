@@ -5,12 +5,19 @@
 
 }
 
-
 .item {
   max-width: 300px;
   margin-bottom: 40px;
 }
 
 .item img {
-  max-width: 300px;
+  width: 300px;
+  height: 225px;
+
+}
+
+.name {
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
 }
