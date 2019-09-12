@@ -18,7 +18,6 @@ const NavPage = () => {
         </li>
         <li className={styles.item}>
           <NavLink
-            exact
             to="/pets"
             className={styles.link}
             activeClassName={styles.active}

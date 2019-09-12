@@ -3,14 +3,41 @@
   padding-top: 50px;
 }
 
+.returnBtn {
+  margin-top: 40px;
+  padding: 6px;
+  font-size: 30px;
+  line-height: 30px;
+  background-color: darkgray;
+  color: white;
+  border: none;
+  text-align: center;
+}
+
+.title {
+  font-size: 30px;
+}
+
+.container {
+  display: flex;
+}
 
 .image {
   width: 690px;
   height: 480px;
+  margin-right: 40px;
+}
+
+.stats {
+  line-height: 40px;
 }
 
 .statsDesciption {
   font-weight: bold;
+}
+
+.statsItem {
+  font-size: 24px;
 }
 
 .name {
